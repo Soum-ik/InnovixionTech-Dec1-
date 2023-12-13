@@ -8,6 +8,7 @@ function App() {
       <Routes>
         <Route path="/"  element={<HomePage />}/>
         <Route path="/*"  element={<ErrorPage />}/>
+        <Route path="/moviepage"  element={<moviePage />}/>
       </Routes>
     </div>
   );

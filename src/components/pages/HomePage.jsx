@@ -6,22 +6,17 @@ import { advertaise, download, kids } from "../../Contant/Contant";
 import TV from "../../../public/images/tv.png";
 import DOWNLOAD from "../../../public/images/download.jpg";
 import KIDS from "../../../public/images/kids.png";
-import img from "../../../public/images/mainbg.jpg";
+import { Link } from "react-router-dom";
+
+
 function HomePage() {
-  // console.log(mainbg);
+  
   return (
     <>
-      <div className="max-h-[60rem] relative pb-20">
-        <div
-          className="absolute inset-0 "
-          style={{
-            backgroundImage: `url("/images/mainbg.jpg")`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            opacity: 0.2,
-            filter: "brightness(0.8)",
-          }}
-        ></div>
+      <div
+        className="max-h-[60rem] bg-cover bg-opacity-95  bg-center relative pb-20"
+        style={{ backgroundImage: `url("/images/mainbg.jpg")` }}
+      >
         <Navbar />
         <Hero />
       </div>
@@ -32,7 +27,11 @@ function HomePage() {
       <CustomComponent advertaise={download} img={DOWNLOAD} />
       <div className=" bg-white/30 h-2 " />
       <CustomComponent advertaise={kids} img={KIDS} />
-      <div className=" bg-white/30 h-2 " />
+      {/* <div className=" bg-white/30 h-2 " /> */}
+
+      <div className=" shadow-2xl shadow-red-500 pb-2 bg-white items-center text-center font-Poppins font-bold text-[30px]">
+        Develop by <Link to='/moviepage' className=" cursor-pointer pl-5 hover:text-[red] ease-in-out delay-75">Soumik</Link>
+      </div>
     </>
   );
 }
