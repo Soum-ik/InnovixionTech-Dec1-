@@ -1,4 +1,6 @@
 const MoviePage = () => {
-return
+
+return <Fragment>
+</Fragment>
 }
 export default MoviePage

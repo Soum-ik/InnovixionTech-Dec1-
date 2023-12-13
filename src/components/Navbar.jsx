@@ -6,7 +6,7 @@ import Button from "./Button";
 
 function Navbar() {
   return (
-    <div className={` ${styles.flexCenter} ${styles.paddingX}`}>
+    <div className={` ${styles.flexCenter} ${styles.paddingX} text-white`}>
       <div className={`${styles.boxWidth}`}>
         <nav className=" flex items-center justify-between mt-5 w-full">
           <img className=" w-36" src={mainLogo} alt="" />
