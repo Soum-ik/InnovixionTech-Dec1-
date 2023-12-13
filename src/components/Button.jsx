@@ -1,7 +1,9 @@
-const Button = ({ text, icon }) => {
+const Button = ({ text, icon, padding }) => {
   return (
-    <button className="select-none cursor-pointer font-Poppins  text-[16px] botton font-bold">
-      {text}
+    <button
+      className={` gap-3 flex items-center justify-center  text-[16px] botton font-bold ${padding}`}
+    >
+      {text} {icon}
     </button>
   );
 };

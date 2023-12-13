@@ -11,7 +11,7 @@ function Navbar() {
         <nav className=" flex items-center justify-between mt-5">
           <img className=" w-36" src={mainLogo} alt="" />
           <ul>
-            <Button text={"Sing Out"}/>
+            <Button text={"Sing Out"} padding={'p-2'}/>
           </ul>
         </nav>
       </div>

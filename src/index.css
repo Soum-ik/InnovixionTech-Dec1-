@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Dhurjati&family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dhurjati&family=Poppins&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer utilities {
   .botton {
-    @apply bg-[#E50914] p-2 rounded-md text-white;
+    @apply bg-[#E50914]  rounded-md text-white select-none cursor-pointer font-Poppins;
   }
 }
