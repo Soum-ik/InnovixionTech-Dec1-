@@ -12,11 +12,19 @@ function HomePage() {
   return (
     <>
       <div className="max-h-[60rem] relative pb-20">
-  <div className="absolute inset-0" style={{ backgroundImage: `url("/images/mainbg.jpg")`, backgroundSize: 'cover', backgroundPosition: 'center', opacity: 0.2, filter: 'brightness(0.8)' }}></div>
-  <Navbar />
-  <Hero />
-</div>
-
+        <div
+          className="absolute inset-0 "
+          style={{
+            backgroundImage: `url("/images/mainbg.jpg")`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            opacity: 0.2,
+            filter: "brightness(0.8)",
+          }}
+        ></div>
+        <Navbar />
+        <Hero />
+      </div>
 
       <div className=" bg-white/30 h-2 " />
       <CustomComponent advertaise={advertaise} img={TV} />
@@ -24,6 +32,7 @@ function HomePage() {
       <CustomComponent advertaise={download} img={DOWNLOAD} />
       <div className=" bg-white/30 h-2 " />
       <CustomComponent advertaise={kids} img={KIDS} />
+      <div className=" bg-white/30 h-2 " />
     </>
   );
 }

@@ -4,7 +4,7 @@ import Button from "./Button";
 
 const Hero = () => (
   <div
-    className={`${styles.marginX} ${styles.flexCenter}  shadow-black`}
+    className={`${styles.marginX} ${styles.flexCenter}  shadow-black `}
   >
     <div className={`${styles.boxWidth} ${styles.paddingY} text-white`}>
       <div className=" flex items-center justify-center flex-col mt-20 gap-2 w-full">
