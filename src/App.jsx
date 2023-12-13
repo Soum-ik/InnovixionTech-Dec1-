@@ -5,7 +5,7 @@ import HomePage from "./components/pages/HomePage";
 
 function App() {
   return (
-    <div>
+    <div className=" w-full">
       <HomePage />
     </div>
   );

@@ -1,14 +1,16 @@
 import React from "react";
-// import mainbg from "./mainbg.jpg";
+import Advertise from "../Advertise";
 import Navbar from "../Navbar";
 import Hero from "../Hero";
+import styles from "../../style/style";
 
-function    HomePage() {
+function HomePage() {
   // console.log(mainbg);
   return (
-    <div className=" bg-slate-950 min-h-screen">
+    <div className={` bg-black min-h-screen`}>
       <Navbar />
-      <Hero/>
+      <Hero />
+      <Advertise />
     </div>
   );
 }
