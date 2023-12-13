@@ -8,9 +8,8 @@ import DOWNLOAD from "../../../public/images/download.jpg";
 import KIDS from "../../../public/images/kids.png";
 import { Link } from "react-router-dom";
 
-
 function HomePage() {
-  
+  const url = "https://github.com/Soum-ik";
   return (
     <>
       <div
@@ -29,8 +28,15 @@ function HomePage() {
       <CustomComponent advertaise={kids} img={KIDS} />
       {/* <div className=" bg-white/30 h-2 " /> */}
 
-      <div className=" shadow-2xl shadow-red-500 pb-2 bg-white items-center text-center font-Poppins font-bold text-[30px]">
-        Develop by <Link to='/moviepage' className=" cursor-pointer pl-5 hover:text-[red] ease-in-out delay-75">Soumik</Link>
+      <div className=" shadow-2xl shadow-red-500 pb-2 bg-white items-center text-center font-Poppins font-bold text-[24px]">
+        Develop by{" "}
+        <a
+          target="_blank"
+          href={`${url}`}
+          className=" cursor-pointer pl-5 hover:text-[red] ease-in-out delay-75"
+        >
+          Soumik
+        </a>
       </div>
     </>
   );
