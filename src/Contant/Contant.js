@@ -1,25 +1,19 @@
-import tvImage from "../images/tv.png";
-import downloadImage from "../images/download.jpg";
-import kidsImage from "../images/kids.png";
 
 export const advertaise = {
   heading: "Enjoy on your TV",
   littelDic:
     "Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.",
-  Image: tvImage,
 };
 
 export const download = {
   heading: "Download your shows to watch offline",
   littelDic: " Save your favorites easily and always have something to watch.",
-  Image: downloadImage,
 };
 
 export const kids = {
   heading: "Create profiles for kids",
   littelDic:
     " Send kids on adventures with their favorite characters in a space made just for them—free with your membership..",
-  Image: kidsImage,
 };
 
 export const questions = [
