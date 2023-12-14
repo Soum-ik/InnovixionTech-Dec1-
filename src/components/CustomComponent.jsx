@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import styles, { layout } from "../style/style";
 import CustomData from "./CustomData";
 

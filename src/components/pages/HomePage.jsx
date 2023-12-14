@@ -9,7 +9,7 @@ import KIDS from "../../../public/images/kids.png";
 // import { Link } from "react-router-dom";
 
 function HomePage() {
-  const url = "https://github.com/Soum-ik";
+  const url = "https://github.com/Soum-ik"
   return (
     <>
       <div
