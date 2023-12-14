@@ -34,6 +34,8 @@ const MovieFetch = () => {
           src={`https://image.tmdb.org/t/p/original/${randomBanner?.backdrop_path}`}
           //alt=
         />
+        {/* <p>{data[].original_title}</p> */}
+        
         <Rowpage title={"Top Rated"} fetchUrl={requests.requestTopRated} />
         <Rowpage title={"Up Comming"} fetchUrl={requests.requestUpComming} />
         <Rowpage title={"Now Playing"} fetchUrl={requests.requestNowPlaying} />
