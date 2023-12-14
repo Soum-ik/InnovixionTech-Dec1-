@@ -1,36 +1,30 @@
+/* eslint-disable react/display-name */
+/* eslint-disable react/prop-types */
+import React, { useEffect, useState, useCallback } from "react";
 import axios from "axios";
-import { useEffect, useState } from "react";
-
 import Moive from "./Moive";
 
-// eslint-disable-next-line react/prop-types
-const Rowpage = ({ title, fetchUrl }) => {
-  // console.log(fetchUrl, "row pages");
+const Rowpage = React.memo(({ title, fetchUrl }) => {
   const [moives, setMoives] = useState([]);
   const [loading, setLoading] = useState(true);
 
+  const fetchMovieData = useCallback(async () => {
+    try {
+      setLoading(true);
+      const response = await axios.get(fetchUrl);
+      setMoives(response.data.results);
+    } catch (err) {
+      console.log(err);
+    } finally {
+      setLoading(false);
+    }
+  }, [fetchUrl]);
 
   useEffect(() => {
-    const fetchMovieData = async () => {
-      try {
-        setLoading(true);
-        const response = await axios.get(fetchUrl);
-        setMoives(response.data.results);
-        setLoading(false);
-      } catch (err) {
-        setLoading(true);
-        console.log(err);
-      } finally {
-        setLoading(false);
-      }
-    };
     fetchMovieData();
+  }, [fetchMovieData]);
 
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  return <Moive title={title} loading={loading} moives={moives} />;
+});
 
-  return (
-    <Moive title={title}  loading={loading} moives={moives}/>
-  );
-};
 export default Rowpage;
