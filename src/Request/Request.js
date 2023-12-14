@@ -1,15 +1,8 @@
 const url = "https://api.themoviedb.org/3/movie";
 
 export const requests = {
-  requestPopular: `${url}/popular?api_key=${
-    import.meta.env.VITE_REACT_TMDB_API_KEY
-  }`,
-  requestNowPlaying: `${url}/now_playing?api_key=${
-    import.meta.env.VITE_REACT_TMDB_API_KEY
-  }`,
-  requestTopRated: `
-  ${url}/movie/top_rated?api_key=${import.meta.env.VITE_REACT_TMDB_API_KEY}`,
-  requestUpComming: `${url}/upcoming?api_key=${
-    import.meta.env.VITE_REACT_TMDB_API_KEY
-  }`,
+  requestPopular: `${url}/popular?api_key=7066655d7e9ec792096e1136af1bf0f9`,
+  requestNowPlaying: `${url}/now_playing?api_key=7066655d7e9ec792096e1136af1bf0f9`,
+  requestTopRated: `${url}/top_rated?api_key=7066655d7e9ec792096e1136af1bf0f9`,
+  requestUpComming: `${url}/upcoming?api_key=7066655d7e9ec792096e1136af1bf0f9`,
 };

@@ -1,4 +1,4 @@
-import React from "react";
+import { Link } from "react-router-dom";
 import styles from "../style/style";
 import mainLogo from "../../public/images/mainLogo.png";
 import Button from "./Button";
@@ -8,8 +8,11 @@ function Navbar() {
   return (
     <div className={` ${styles.flexCenter} ${styles.paddingX} text-white`}>
       <div className={`${styles.boxWidth}`}>
-        <nav className=" flex items-center justify-between mt-5 w-full">
-          <img className=" w-36" src={mainLogo} alt="" />
+        <nav className=" flex items-center relative justify-between mt-5 w-full">
+          {/* <div className=""> </div> */}
+          <Link to={"/"}>
+            <img className=" w-36" src={mainLogo} alt="" />
+          </Link>
           <ul>
             <Button text={"Sing In"} padding={"p-2"} />
           </ul>
