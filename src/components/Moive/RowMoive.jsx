@@ -1,14 +1,16 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { FaRegHeart } from "react-icons/fa6";
+import { FaHeart } from "react-icons/fa6";
 
 // eslint-disable-next-line react/prop-types
 const Rowpage = ({ title, fetchUrl }) => {
   // console.log(fetchUrl, "row pages");
   const [moives, setMoives] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [like, setLike] = useState(true)
 
-  // console.log(moives.length);
   useEffect(() => {
     const fetchMovieData = async () => {
       try {
@@ -45,11 +47,12 @@ const Rowpage = ({ title, fetchUrl }) => {
                   src={`https://image.tmdb.org/t/p/w500/${movie?.backdrop_path}`}
                   alt=""
                 />
-                <div className="  absolute inset-0  opacity-0 hover:opacity-100 hover:bg-black/80 text-center flex flex-col items-center justify-center space-y-2">
+                <div className=" text-red-600  absolute inset-0  opacity-0 hover:opacity-100 hover:bg-black/80 text-center flex flex-col items-center justify-center space-y-2">
                   <h3 className=" text-[16px] font-bold">
                     {movie.original_title}
                   </h3>
-                  <p className=" max-w-[300px] text-[10px]">{movie.overview}</p>
+                  <p className=" text-white max-w-[300px] text-[10px]">{movie.overview}</p>
+                  <p className=" text-[30px] absolute top-3 left-4" onClick={() => setLike(!like)}>{like ? <FaRegHeart /> : <FaHeart />}</p>
                 </div>
               </Link>
             ))}
