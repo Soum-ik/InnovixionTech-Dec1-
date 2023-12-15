@@ -1,12 +1,16 @@
-
 Creating a movie app that utilizes The Movie Database (TMDb) can be a great project. TMDb provides a comprehensive database of movies, TV shows, and actors, along with various metadata. Here's a basic outline of features you might want to include in your app:
 
-User Authentication:
-
+<h1>User Authentication:</h1>
 Allow users to create accounts and log in.
 Utilize TMDb API for user authentication or create your own system.
-Home Screen:
+ 
 
+
+<h1>Home Screen:</h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
 Display popular movies and TV shows.
 Provide a search bar for users to find specific content.
 Movie/TV Show Details:
