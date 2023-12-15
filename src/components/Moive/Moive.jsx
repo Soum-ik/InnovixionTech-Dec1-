@@ -14,7 +14,7 @@ const Moive = ({ title, loading, moives }) => {
       </h2>
       <div className=" mb-10">
         {loading ? (
-          <p>Loading...</p>
+          <p className=" grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 bg-slate-500/20 min-h-[10rem] animate-pulse"></p>
         ) : (
           <div className=" grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 gap-7">
             {moives?.map((movie, id) => (

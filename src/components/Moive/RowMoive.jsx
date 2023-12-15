@@ -13,10 +13,10 @@ const Rowpage = React.memo(({ title, fetchUrl }) => {
       setLoading(true);
       const response = await axios.get(fetchUrl);
       setMoives(response.data.results);
+      setLoading(false)
     } catch (err) {
+      setLoading(true)
       console.log(err);
-    } finally {
-      setLoading(false);
     }
   }, [fetchUrl]);
 
