@@ -1,3 +1,4 @@
+![image](https://github.com/Soum-ik/InnovixionTech-Dec1-/assets/110479389/2f7df09d-974f-4ace-9ec0-f630d00dbd2c)
 
 Creating a movie app that utilizes The Movie Database (TMDb) can be a great project. TMDb provides a comprehensive database of movies, TV shows, and actors, along with various metadata. Here's a basic outline of features you might want to include in your app:
 
