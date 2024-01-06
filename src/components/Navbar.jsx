@@ -18,7 +18,7 @@ function Navbar() {
         <nav className=" flex items-center relative justify-between mt-5 w-full">
           {/* <div className=""> </div> */}
           <Link to={"/"}>
-            <img className=" w-36" src={mainLogo} alt="" />
+            <img className="  w-36" src={mainLogo} alt="" />
           </Link>
 
           {/* desktop */}
